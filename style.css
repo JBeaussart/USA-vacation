@@ -1,0 +1,79 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: Helvetica;
+}
+.slider{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(to left, #ba7453, #DBBEA3);
+	z-index: -1;
+}
+
+nav{
+	display: grid;
+	grid-template-columns: 10% 1fr 1fr 10%; 
+	min-height: 10vh;
+	color: #fff;
+	align-items: center;
+}
+
+#logo{
+	grid-column: 2/3;
+	font-size: 25px;
+}
+
+.hamburger{
+	position: absolute;
+	right: 160px;
+}
+
+section{
+	display: flex;
+	height: 80vh;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero{
+	height: 60%;
+	width: 100%;
+	position: relative;
+}
+
+.hero img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	box-shadow: 8px 8px 10px 1px rgba(171, 148, 127, 100);
+}
+
+.headline{
+	position: absolute;
+	top: 85%;
+	left: 55%;
+	font-size: 80px;
+	transform: translate(-20%, -70%);
+	color: #E1E1E1;
+	z-index: 3;
+}
+
+
+.hero::after{
+	content: "";
+	background: black;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0.3;
+}
+
